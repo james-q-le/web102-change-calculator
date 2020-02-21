@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Change Calculator</title>
+    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      h1.title {
+        position:relative;
+        left:200px;
+      }
+      #dueSale {
+        position:relative;
+        left:100px;
+        border: 3px;
+      }
+      #amount-due {
+        position:relative;
+        left:113px;
+      }
+      #amountGiven {
+        position:relative;
+        left:400px;
+        top:-70px;
+        border: 3px; 
+      }
+      #amount-received{
+        position:relative;
+        left:450px;
+        top: -70px;
+      }
+      #calculate-change{
+        position:relative;
+        left:152px;
+        top:-25px;
+      }
+      #bg-one {
+        background-color: lightgray; 
+      }
+      #dollars {
+        position:relative;
+        left:310px;
+      }
+      #bg-two {
+        background-color:lightgray;
+        position:relative;
+        bottom:-8px;
+      }
+      #bg-three {
+        background-color: lightgray;
+        height:70px;
+      }
+      #quarters {
+        position: relative;
+        left:95px;
+      }
+      #d {
+        position:relative;
+        left: 260px;
+        top:-85px;
+      }
+      #n {
+        position:relative;
+        left:395px;
+        top:-170px;
+      }
+      #p {
+        position: relative;
+        left:545px;
+        top:-256px;
+      }
+      #dimes-output, #nickels-output, #pennies-output {
+        position: relative;
+        left: 50px;
+      }
+      #dollars-output {
+        position: relative;
+        left: 350px;
+      }
+      #quarters-output {
+        position: relative;
+        left:155px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Write your markup here -->
+    <div id='bg-one'>
+      <h1 class='title'> Change Calculator </h1>
+    
+      <p id='dueSale'> How much is due for the sale? </p>
+      <input id='amount-due' type='text'>
+
+      <p id='amountGiven'> How much has the customer given you?</p>
+      <input id='amount-received' type='text'>
+
+      <button id='calculate-change'> Calculate </button>
+    </div>
+
+    <div id='bg-two'>
+      <h2 id='dollars'> Dollars </h2>
+      <p id='dollars-output'>0</p>
+    </div>
+    
+    <div id='bg-three'>
+      <div id='q'>
+        <h2 id='quarters'> Quarters </h2>
+        <p id='quarters-output'>0</p>
+      </div>
+      
+      <div id='d'>
+        <h2 id='dimes'> Dimes </h2>
+        <p id='dimes-output'>0</p>
+      </div>
+      
+      <div id='n'>
+        <h2 id='nickels'> Nickels </h2>
+        <p id='nickels-output'>0</p>
+      </div>
+      
+      <div id='p'>
+        <h2 id='pennies'> Pennies </h2>
+        <p id='pennies-output'>0</p>
+      </div>
+    </div>
+    
+    <!-- Don't forget to add your <script> tag here -->
+    <script src="main.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>
